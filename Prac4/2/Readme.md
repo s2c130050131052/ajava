@@ -2,6 +2,8 @@
 ------------------------------
 In this example we are going to show how we can display a current date and time on our browser. It is very easy to display it on our browser by using the Date class of the java.util package.
 
+![1](https://cloud.githubusercontent.com/assets/17005753/14224842/11544426-f8c8-11e5-817c-c6e22a0bff7e.JPG)
+
 4.4 A Holistic counter in Servlet
 ---------------------------------
 In this program we are going to make a such a servlet which will count the number of times it has been accessed and the number of threads created by the server.
