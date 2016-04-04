@@ -1,0 +1,22 @@
+-- Function: public.student()
+-- DROP FUNCTION public.student();
+CREATE OR REPLACE FUNCTION public.student()
+  RETURNS TABLE(rollno integer, name character varying) AS
+$BODY$
+DECLARE
+    r student%rowtype;
+
+    f_id INTEGER;
+    f_name VARCHAR;
+BEGIN
+RETURN QUERY
+   SELECT * FROM student
+    WHERE student.name='meeta';
+    RETURN;
+END
+$BODY$
+  LANGUAGE plpgsql VOLATILE
+  COST 100
+  ROWS 1000;
+ALTER FUNCTION public.studentnew1()
+  OWNER TO postgres;
